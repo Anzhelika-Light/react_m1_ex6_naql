@@ -1,0 +1,25 @@
+.title {
+  width: 423px;
+  height: 118px;
+
+  margin-top: 123px;
+  margin-bottom: 93px;
+
+  font-family: "intro";
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #feffff;
+}
+
+.btnHero {
+  /* display: block; */
+  width: 211px;
+  height: 47px;
+  margin-bottom: 131px;
+  margin-right: auto;
+  margin-left: 0;
+
+  font-size: 24px;
+}

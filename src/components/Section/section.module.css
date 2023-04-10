@@ -1,0 +1,26 @@
+.greenWrapper {
+  background-image: linear-gradient(
+      to right,
+      rgba(81, 155, 68, 0.75),
+      rgba(81, 155, 68, 0.75)
+    ),
+    url(../../assets/img/road.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sectionAbout {
+  padding-top: 57px;
+  padding-bottom: 76px;
+}
+
+.sectionSearch {
+  padding-top: 57px;
+  padding-bottom: 119px;
+  background-image: url(../../assets/img/cars.svg),
+    linear-gradient(to right, rgba(229, 240, 227, 1), rgba(229, 240, 227, 1));
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+}

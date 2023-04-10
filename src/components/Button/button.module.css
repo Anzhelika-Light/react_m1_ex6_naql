@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  padding: 12px 33px;
+  font-family: "roboto-regular";
+  /* font-size: 20px; */
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #feffff;
+  background: transparent;
+  border: 1px solid #feffff;
+  border-radius: 30px;
+  margin-right: 15px;
+  margin-left: 30px;
+}
+
+.btn:hover {
+  color: #356f34;
+  background-color: #fff;
+}

@@ -1,0 +1,55 @@
+.title {
+  margin-bottom: 53px;
+
+  font-family: "intro";
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #519b44;
+}
+
+.mainText {
+  margin-bottom: 76px;
+  max-width: 529px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: "roboto-regular";
+  font-size: 23px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #989898;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.item {
+  max-width: 225px;
+}
+
+.item:first-child {
+  max-width: 162px;
+}
+
+.img {
+  display: inline-block;
+  width: 162px;
+  height: 153px;
+  margin-bottom: 79px;
+}
+
+.text {
+  font-family: "roboto-regular";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #5c5c5c;
+}

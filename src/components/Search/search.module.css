@@ -1,0 +1,33 @@
+.title {
+  margin-bottom: 87px;
+
+  text-transform: uppercase;
+  font-family: "intro";
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #519b44;
+}
+
+.input {
+  width: 407px;
+  border: none;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  padding-left: 39px;
+  padding-right: 0;
+  font-family: "roboto-regular";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #5c5c5c;
+}
+
+.btn {
+  width: 90px;
+  height: 60px;
+  border: none;
+  background-color: #519b44;
+}

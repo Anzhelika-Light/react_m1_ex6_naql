@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  gap: 30px;
+
+  margin-top: 52px;
+  margin-bottom: 57px;
+}
+
+.link {
+  font-family: "roboto-regular";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #feffff;
+}

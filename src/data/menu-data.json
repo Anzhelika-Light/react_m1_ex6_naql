@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "text": "Home",
+    "link": "#"
+  },
+  {
+    "id": "2",
+    "text": "Packages",
+    "link": "#"
+  },
+  {
+    "id": "3",
+    "text": "About us",
+    "link": "#"
+  },
+  {
+    "id": "4",
+    "text": "Contact us",
+    "link": "#"
+  }
+]
