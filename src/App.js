@@ -3,21 +3,23 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Search from "./components/Search/Search";
+import Login from "./components/Login/Login";
 
 import "./App.css";
 import "./styles/common.css";
 import styles from "./components/Section/section.module.css";
 
 import AboutData from "./data/about-data.json";
+import HeaderData from "./data/language-options.json";
 
 function App() {
   return (
     <div className="App">
       <div className={styles.greenWrapper}>
-        <Section>
-          <Header />
+        <Section className={styles.sectionHeader}>
+          <Header items={HeaderData} />
         </Section>
-        <Section>
+        <Section className={styles.sectionHero}>
           <Hero />
         </Section>
       </div>
@@ -26,6 +28,9 @@ function App() {
       </Section>
       <Section className={styles.sectionSearch}>
         <Search title="Search" />
+      </Section>
+      <Section className={styles.sectionLogin}>
+        <Login />
       </Section>
     </div>
   );

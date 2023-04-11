@@ -5,30 +5,21 @@
 }
 
 .logo {
-  display: block;
-  margin-top: 46px;
-  margin-bottom: 48px;
-
   font-size: 34px;
   color: #ffffff;
   margin-right: 39px;
 }
 
-/* .img1 {
-  position: absolute;
-  width: 1355px;
-  height: 966px;
-
-  z-index: -10;
+.logIn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "roboto-regular";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #feffff;
 }
-
-.img2 {
-  position: absolute;
-  width: 1350px;
-  height: 641px;
-
-  z-index: -9;
-} */
 
 .btnHeader {
   font-size: 20px;
@@ -36,7 +27,7 @@
 
 .selectBtn {
   display: inline-block;
-  padding: 12px 33px;
+  padding: 12px 11px 12px 18px;
   font-family: "roboto-regular";
   font-size: 20px;
   font-weight: 400;
@@ -47,8 +38,9 @@
   background: transparent;
   border: 1px solid #feffff;
   border-radius: 30px;
-  /* margin-right: 15px;
-  margin-left: 30px; */
+
+  cursor: pointer;
+  outline: none;
 }
 
 .selectBtn:hover {

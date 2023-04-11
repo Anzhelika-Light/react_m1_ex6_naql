@@ -1,12 +1,11 @@
 .title {
-  width: 423px;
-  height: 118px;
+  max-width: 420px;
 
-  margin-top: 123px;
   margin-bottom: 93px;
 
   font-family: "intro";
   font-size: 50px;
+  line-height: 1.62;
   font-weight: 400;
   font-style: normal;
   text-align: left;
@@ -15,11 +14,11 @@
 
 .btnHero {
   /* display: block; */
+  margin: 0;
   width: 211px;
-  height: 47px;
-  margin-bottom: 131px;
-  margin-right: auto;
-  margin-left: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   font-size: 24px;
+  text-transform: capitalize;
 }

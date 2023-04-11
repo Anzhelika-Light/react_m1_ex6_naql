@@ -10,6 +10,15 @@
   background-size: cover;
 }
 
+.sectionHeader {
+  padding-top: 40px;
+}
+
+.sectionHero {
+  padding-top: 123px;
+  padding-bottom: 131px;
+}
+
 .sectionAbout {
   padding-top: 57px;
   padding-bottom: 76px;
@@ -23,4 +32,10 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: contain;
+}
+
+.sectionLogin {
+  padding-top: 59px;
+  padding-bottom: 36px;
+  background-color: #e94841;
 }

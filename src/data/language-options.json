@@ -1,0 +1,5 @@
+[
+  { "id": "id1", "value": "value1", "language": "En" },
+  { "id": "id2", "value": "value2", "language": "Ua" },
+  { "id": "id3", "value": "value3", "language": "Fr" }
+]

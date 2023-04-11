@@ -3,15 +3,18 @@
   "mainText": "Inaql is the best search engine for finding a suitable transportation method",
   "details": [
     {
-      "img": "V",
+      "id": "id1",
+      "img": "../assets/img/reg-icon.svg",
       "text": "Register Now ! it’s for free"
     },
     {
-      "img": "V",
+      "id": "id2",
+      "img": "../assets/img/search-icon.svg",
       "text": "Search using multiple parameters"
     },
     {
-      "img": "V",
+      "id": "id3",
+      "img": "../assets/img/clock-icon.svg",
       "text": "Come back again we’r here all the time"
     }
   ]

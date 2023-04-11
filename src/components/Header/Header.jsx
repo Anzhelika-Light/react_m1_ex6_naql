@@ -5,7 +5,13 @@ import menuData from "../../data/menu-data.json";
 
 import styles from "./header.module.css";
 
-const Header = () => {
+const Header = ({ items }) => {
+  const elements = items.map(({ value, language, id }) => (
+    <option key={id} value={value}>
+      {language}
+    </option>
+  ));
+
   return (
     <div className="container container--header">
       <div className={styles.containerLeft}>
@@ -13,12 +19,13 @@ const Header = () => {
         <Menu items={menuData} />
       </div>
       <div className={styles.containerRight}>
-        <span className={styles.logIn}>Log in</span>
-        <Button className={styles.btnHeader}>Sign up </Button>
+        <a className={styles.logIn} href="#login">
+          Log in
+        </a>
+
+        <Button className={styles.btnHeader}>Sign up</Button>
         <select className={styles.selectBtn} name="select">
-          <option value="value1">en</option>
-          <option value="value1">ua</option>
-          <option value="value1">fr</option>
+          {elements}
         </select>
       </div>
     </div>

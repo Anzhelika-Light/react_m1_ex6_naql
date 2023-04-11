@@ -1,0 +1,28 @@
+.title {
+  margin-bottom: 65px;
+  text-transform: uppercase;
+  font-family: "intro";
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text {
+  max-width: 255px;
+  margin-top: 45px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: "roboto-regular";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #feffff;
+}
+
+.textBold {
+  font-weight: 600;
+}

@@ -1,0 +1,77 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 433px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.field {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  background-color: #e94841;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+  font-family: "roboto-regular";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #feffff;
+
+  outline: none;
+}
+
+.field::placeholder {
+  color: rgba(254, 255, 255, 0.5);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox {
+  margin-bottom: 59px;
+  margin-right: 8px;
+}
+.checkboxText,
+.help {
+  font-family: "roboto-regular";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #feffff;
+}
+
+.help {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.btn {
+  display: block;
+  width: 302px;
+  height: 48px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: "roboto-regular";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: #e94841;
+  color: #feffff;
+  border: 1px solid #feffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #feffff;
+  color: #e94841;
+}
