@@ -1,8 +1,17 @@
 import { Component } from "react";
+import PropTypes from "prop-types";
 
 import styles from "./form.module.css";
 
 class Form extends Component {
+  static defaultProps = {
+    onSubmit: () => {},
+  };
+
+  static propTypes = {
+    onSubmit: PropTypes.func,
+  };
+
   state = {
     name: "",
     password: "",
@@ -11,21 +20,44 @@ class Form extends Component {
 
   handleChange = ({ target }) => {
     const { name, value } = target;
+    console.log(target[name]);
+    console.log(target.value);
+
     this.setState({
       [name]: value,
     });
   };
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { onSubmit } = this.props;
+    onSubmit({ ...this.state });
+
+    console.log(this.state);
+    this.reset();
+  };
+
+  reset() {
+    this.setState({
+      name: "",
+      password: "",
+      checked: false,
+    });
+  }
+
   render() {
-    const { handleChange } = this;
+    const { handleChange, handleSubmit } = this;
+    const { name, password, checked } = this.state;
 
     return (
       <div className="container">
-        <form className={styles.form}>
+        <form onClick={handleSubmit} className={styles.form}>
           <input
             className={styles.field}
             type="text"
             name="name"
+            value={name}
             placeholder="Username or mobile number"
             onChange={handleChange}
           />
@@ -33,6 +65,7 @@ class Form extends Component {
             className={styles.field}
             type="password"
             name="password"
+            value={password}
             placeholder="Password"
             onChange={handleChange}
           />
@@ -41,10 +74,13 @@ class Form extends Component {
               <input
                 className={styles.checkbox}
                 type="checkbox"
-                name="Remember me?"
-                id=""
+                id="rememberMe"
+                name="checked"
+                value={checked}
               />
-              <span className={styles.checkboxText}>Remember me?</span>
+              <label htmlFor="rememberMe" className={styles.checkboxText}>
+                Remember me?
+              </label>
             </div>
             <a href="#" alt="Forgot password" className={styles.help}>
               Forgot password
