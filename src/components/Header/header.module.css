@@ -11,6 +11,7 @@
 }
 
 .logIn {
+  display: inline-block;
   padding-top: 15px;
   padding-bottom: 15px;
   font-family: "roboto-regular";
@@ -19,6 +20,9 @@
   font-style: normal;
   text-align: center;
   color: #feffff;
+}
+.logIn:hover {
+  transform: scale(1.1);
 }
 
 .btnHeader {

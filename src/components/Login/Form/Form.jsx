@@ -2,6 +2,7 @@ import { Component } from "react";
 import PropTypes from "prop-types";
 
 import styles from "./form.module.css";
+import { nanoid } from "nanoid";
 
 class Form extends Component {
   static defaultProps = {
@@ -18,14 +19,17 @@ class Form extends Component {
     checked: false,
   };
 
+  checkboxId = nanoid();
+
   handleChange = ({ target }) => {
-    const { name, value } = target;
+    const { name, value, checked, type } = target;
+
+    const newValue = type === "checkbox" ? checked : value;
+    this.setState({
+      [name]: newValue,
+    });
     console.log(target[name]);
     console.log(target.value);
-
-    this.setState({
-      [name]: value,
-    });
   };
 
   handleSubmit = (e) => {
@@ -47,12 +51,12 @@ class Form extends Component {
   }
 
   render() {
-    const { handleChange, handleSubmit } = this;
+    const { checkboxId, handleChange, handleSubmit } = this;
     const { name, password, checked } = this.state;
 
     return (
       <div className="container">
-        <form onClick={handleSubmit} className={styles.form}>
+        <form onSubmit={handleSubmit} className={styles.form}>
           <input
             className={styles.field}
             type="text"
@@ -60,6 +64,7 @@ class Form extends Component {
             value={name}
             placeholder="Username or mobile number"
             onChange={handleChange}
+            required
           />
           <input
             className={styles.field}
@@ -68,17 +73,19 @@ class Form extends Component {
             value={password}
             placeholder="Password"
             onChange={handleChange}
+            required
           />
           <div className={styles.wrapper}>
             <div className={styles.checkboxWrapper}>
               <input
                 className={styles.checkbox}
                 type="checkbox"
-                id="rememberMe"
+                id={checkboxId}
                 name="checked"
                 value={checked}
+                onChange={handleChange}
               />
-              <label htmlFor="rememberMe" className={styles.checkboxText}>
+              <label htmlFor={checkboxId} className={styles.checkboxText}>
                 Remember me?
               </label>
             </div>

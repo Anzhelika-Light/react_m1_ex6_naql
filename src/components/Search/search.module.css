@@ -10,7 +10,7 @@
   color: #519b44;
 }
 
-.input {
+.select {
   width: 407px;
   border: none;
   padding-top: 19px;
@@ -27,7 +27,12 @@
 
 .btn {
   width: 90px;
-  height: 60px;
+  height: 64px;
   border: none;
   background-color: #519b44;
+
+  /* position: relative;
+  top: -3px;
+  right: 15px;
+   */
 }

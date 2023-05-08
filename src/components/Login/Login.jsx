@@ -1,11 +1,12 @@
 import { Component } from "react";
 import Form from "./Form/Form";
+import Notiflix from "notiflix";
 
 import styles from "./login.module.css";
 
 class Login extends Component {
-  loggedIn = () => {
-    console.log("Hello");
+  loggedIn = (data) => {
+    Notiflix.Notify.success("You are successfully logged in");
   };
 
   render() {
