@@ -12,7 +12,7 @@ import styles from "./components/Section/section.module.css";
 import AboutData from "./data/about-data.json";
 import HeaderData from "./data/language-options.json";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className={styles.greenWrapper}>
@@ -34,6 +34,6 @@ function App() {
       </Section>
     </div>
   );
-}
+};
 
 export default App;

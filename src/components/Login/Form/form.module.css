@@ -6,7 +6,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 .field {
   margin-bottom: 40px;
   padding-bottom: 10px;
@@ -23,16 +22,13 @@
 
   outline: none;
 }
-
 .field::placeholder {
   color: rgba(254, 255, 255, 0.5);
 }
-
 .wrapper {
   display: flex;
   justify-content: space-between;
 }
-
 .checkbox {
   margin-bottom: 59px;
   margin-right: 8px;
@@ -46,12 +42,13 @@
   text-align: left;
   color: #feffff;
 }
-
 .help {
   font-weight: 600;
   text-decoration: underline;
 }
-
+.help:hover {
+  transform: scale(1.1);
+}
 .btn {
   display: block;
   width: 302px;

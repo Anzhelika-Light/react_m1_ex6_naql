@@ -8,7 +8,6 @@
   text-align: center;
   color: #ffffff;
 }
-
 .text {
   max-width: 255px;
   margin-top: 45px;
@@ -22,7 +21,17 @@
   text-align: left;
   color: #feffff;
 }
-
 .textBold {
+  display: inline-block;
   font-weight: 600;
+  cursor: pointer;
+}
+.textBold:hover {
+  transform: scale(1.1);
+}
+.closeIcon {
+  cursor: pointer;
+}
+.closeIcon:hover {
+  transform: scale(1.1);
 }

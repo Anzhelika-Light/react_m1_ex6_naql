@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 20px;
+
+  max-width: 433px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.field {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 7px 15px;
+
+  font-family: "roboto-regular";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #000;
+
+  outline: none;
+}
+.field::placeholder {
+  color: rgba(91, 94, 94, 0.5);
+}
+.field:hover {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.btn {
+  display: block;
+  width: 302px;
+  height: 48px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: "roboto-regular";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: #feffff;
+  color: #131111;
+  border: 1px solid #131111;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #131111;
+  color: #feffff;
+}

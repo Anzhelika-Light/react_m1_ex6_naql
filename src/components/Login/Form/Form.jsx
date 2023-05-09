@@ -1,8 +1,10 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
+import { nanoid } from "nanoid";
+
+import Modal from "../../Modal/Modal";
 
 import styles from "./form.module.css";
-import { nanoid } from "nanoid";
 
 class Form extends Component {
   static defaultProps = {
@@ -17,6 +19,7 @@ class Form extends Component {
     name: "",
     password: "",
     checked: false,
+    showModal: false,
   };
 
   checkboxId = nanoid();
@@ -50,12 +53,19 @@ class Form extends Component {
     });
   }
 
+  toggleModal = () => {
+    this.setState(({ showModal }) => ({
+      showModal: !showModal,
+    }));
+  };
+
   render() {
-    const { checkboxId, handleChange, handleSubmit } = this;
-    const { name, password, checked } = this.state;
+    const { checkboxId, handleChange, handleSubmit, toggleModal } = this;
+    const { name, password, checked, showModal } = this.state;
 
     return (
       <div className="container">
+        {showModal && <Modal />}
         <form onSubmit={handleSubmit} className={styles.form}>
           <input
             className={styles.field}
@@ -89,9 +99,9 @@ class Form extends Component {
                 Remember me?
               </label>
             </div>
-            <a href="#" alt="Forgot password" className={styles.help}>
+            <span className={styles.help} onClick={toggleModal}>
               Forgot password
-            </a>
+            </span>
           </div>
           <button className={styles.btn} type="submit">
             Login
