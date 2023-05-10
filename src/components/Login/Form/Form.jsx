@@ -3,8 +3,11 @@ import PropTypes from "prop-types";
 import { nanoid } from "nanoid";
 
 import Modal from "../../Modal/Modal";
+import PasswordRecoveryForm from "../PasswordRecoveryForm/PasswordRecoveryForm";
+import { GrClose } from "react-icons/gr";
 
 import styles from "./form.module.css";
+import Notiflix from "notiflix";
 
 class Form extends Component {
   static defaultProps = {
@@ -59,13 +62,29 @@ class Form extends Component {
     }));
   };
 
+  recoverPassword = () => {
+    Notiflix.Notify.info("Message is sent to your email.");
+    this.toggleModal();
+  };
+
   render() {
-    const { checkboxId, handleChange, handleSubmit, toggleModal } = this;
+    const {
+      checkboxId,
+      handleChange,
+      handleSubmit,
+      toggleModal,
+      recoverPassword,
+    } = this;
     const { name, password, checked, showModal } = this.state;
 
     return (
       <div className="container">
-        {showModal && <Modal />}
+        {showModal && (
+          <Modal onClose={toggleModal}>
+            <GrClose onClick={toggleModal} className={styles.closeIcon} />
+            <PasswordRecoveryForm onSubmit={recoverPassword} />
+          </Modal>
+        )}
         <form onSubmit={handleSubmit} className={styles.form}>
           <input
             className={styles.field}
