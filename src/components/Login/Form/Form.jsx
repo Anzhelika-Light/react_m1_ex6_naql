@@ -111,7 +111,7 @@ class Form extends Component {
                 type="checkbox"
                 id={checkboxId}
                 name="checked"
-                value={checked}
+                checked={checked}
                 onChange={handleChange}
               />
               <label htmlFor={checkboxId} className={styles.checkboxText}>
